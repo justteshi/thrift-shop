@@ -1,84 +1,157 @@
----
-layout: main
-title: Products
-permalink: /products/
----
-<style>
-    .products-container { 
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      grid-gap: 20px;
-      align-items: center;
-      
-      width: 70% ;
-      margin: 0 auto;
-      text-align: center;
-      }
-    .item-wrapper img {
-      
-      max-width: 100%;
-    }
-    h1{
-        text-align: center;
-        margin: 0 auto;
-        color: salmon;
-        text-shadow: 2px 2px black;
-        font-size: 30px;
-        border-bottom: 2px dotted salmon;
-        margin-bottom: 1em;
-        width: 30%;
-        padding-top: 4em;
-    }
-    .item-wrapper{
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    }
-    .item-wrapper:hover{
-        cursor: pointer;
-        transform: scale(1.1);
-        background: rgba(0,0,0,0.3);
-    }
-</style>
-<h1>Products we offer at the moment</h1>
-<div class="products-container">
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 1.png" alt="">
-        <p>Nike T-shirt</p>
-        <p>75 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 2.png" alt="">
-        <p>Nike T-shirt</p>
-        <p>75 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 3.png" alt="">
-        <p>The North Face Winter Jacket</p>
-        <p>250 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 4.png" alt="">
-        <p>Nike Air Jordan Off-white</p>
-        <p>50 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 5.png" alt="">
-        <p>Adidas T-shirt</p>
-        <p>250 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 6.png" alt="">
-        <p>Supreme Hoodie</p>
-        <p>1000 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 7.png" alt="">
-        <p>Bape Pants</p>
-        <p>250 $</p>
-    </div>
-    <div class="item-wrapper">
-        <img src="{{ site.baseurl }}/images/product 8.png" alt="">
-        <p>Polo T-shirt</p>
-        <p> 10 $</p>
-    </div>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Browse the latest one-off second-hand streetwear and everyday pieces at Thrift Shop Sofia.">
+    <title>Products — Thrift Shop</title>
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body data-page="products">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><a class="brand" href="./index.html" aria-label="Thrift Shop home">THRIFT<span>/SHOP</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="./index.html"
+                                                                           data-nav="home">Home</a><a
+            href="./products.html" data-nav="products">Products</a><a href="./about.html" data-nav="about">About</a><a
+            href="./contacts.html" data-nav="contacts">Contact</a></nav>
+    <a class="header-cta" href="./contacts.html">Visit the shop <span aria-hidden="true">↗</span></a></header>
+<main id="main-content">
+    <header class="page-hero"><p class="eyebrow reveal">The current rail · 08 one-off pieces</p>
+        <h1 class="reveal">Found,<br><em>not made.</em></h1>
+        <p class="page-intro reveal">No endless inventory. No identical restocks. Just good pieces waiting for the right
+            person.</p></header>
+    <section class="catalog section" aria-labelledby="catalog-title">
+        <div class="catalog-toolbar"><h2 class="sr-only" id="catalog-title">Available products</h2>
+            <div class="filters" role="group" aria-label="Filter products">
+                <button class="filter is-active" data-filter="all" type="button">All <span>08</span></button>
+                <button class="filter" data-filter="tops" type="button">Tops <span>04</span></button>
+                <button class="filter" data-filter="outerwear" type="button">Outerwear <span>02</span></button>
+                <button class="filter" data-filter="bottoms" type="button">Bottoms <span>01</span></button>
+                <button class="filter" data-filter="footwear" type="button">Footwear <span>01</span></button>
+            </div>
+            <p class="results-count" aria-live="polite">Showing 8 pieces</p></div>
+        <div class="catalog-grid">
+            <article class="product-card reveal" data-category="tops">
+                <div class="product-image cream"><span class="product-tag">Just in</span>
+                    <button class="save-button" type="button" aria-label="Save Nike graphic T-shirt"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 1.png" alt="White Nike graphic T-shirt" width="767"
+                         height="767"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Tops / 001</p>
+                        <h3>Nike graphic T-shirt</h3>
+                        <p class="product-size">Size M · Excellent</p></div>
+                    <p class="price">€38</p></div>
+            </article>
+            <article class="product-card reveal" data-category="tops">
+                <div class="product-image peach">
+                    <button class="save-button" type="button" aria-label="Save Nike logo T-shirt" aria-pressed="false">
+                        ♡
+                    </button>
+                    <img src="/images/product 2.png" alt="Black Nike logo T-shirt" loading="lazy"
+                         width="500" height="500"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Tops / 002</p>
+                        <h3>Nike logo T-shirt</h3>
+                        <p class="product-size">Size L · Very good</p></div>
+                    <p class="price">€38</p></div>
+            </article>
+            <article class="product-card reveal" data-category="outerwear">
+                <div class="product-image blue">
+                    <button class="save-button" type="button" aria-label="Save The North Face winter jacket"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 3.png" alt="Black The North Face winter jacket" loading="lazy"
+                         width="800" height="1000"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Outerwear / 003</p>
+                        <h3>The North Face winter jacket</h3>
+                        <p class="product-size">Size M · Excellent</p></div>
+                    <p class="price">€125</p></div>
+            </article>
+            <article class="product-card reveal" data-category="footwear">
+                <div class="product-image sage"><span class="product-tag">Rare find</span>
+                    <button class="save-button" type="button" aria-label="Save Air Jordan Off-White sneakers"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 4.png" alt="White Nike Air Jordan Off-White sneaker"
+                         loading="lazy" width="1000" height="600"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Footwear / 004</p>
+                        <h3>Air Jordan Off-White</h3>
+                        <p class="product-size">EU 42 · Very good</p></div>
+                    <p class="price">€150</p></div>
+            </article>
+            <article class="product-card reveal" data-category="tops">
+                <div class="product-image sage">
+                    <button class="save-button" type="button" aria-label="Save Adidas logo T-shirt"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 5.png" alt="Black Adidas logo T-shirt" loading="lazy"
+                         width="767" height="767"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Tops / 005</p>
+                        <h3>Adidas logo T-shirt</h3>
+                        <p class="product-size">Size S · Excellent</p></div>
+                    <p class="price">€42</p></div>
+            </article>
+            <article class="product-card reveal" data-category="outerwear">
+                <div class="product-image cream"><span class="product-tag">Collector</span>
+                    <button class="save-button" type="button" aria-label="Save Supreme logo hoodie"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 6.png" alt="Black Supreme hoodie with red box logo"
+                         loading="lazy" width="888" height="1093"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Outerwear / 006</p>
+                        <h3>Supreme logo hoodie</h3>
+                        <p class="product-size">Size M · Very good</p></div>
+                    <p class="price">€185</p></div>
+            </article>
+            <article class="product-card reveal" data-category="bottoms">
+                <div class="product-image peach">
+                    <button class="save-button" type="button" aria-label="Save Bape camouflage trousers"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 7.png" alt="Green Bape camouflage trousers" loading="lazy"
+                         width="2500" height="2500"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Bottoms / 007</p>
+                        <h3>Bape camouflage trousers</h3>
+                        <p class="product-size">Waist 32 · Good</p></div>
+                    <p class="price">€90</p></div>
+            </article>
+            <article class="product-card reveal" data-category="tops">
+                <div class="product-image blue">
+                    <button class="save-button" type="button" aria-label="Save Polo Ralph Lauren T-shirt"
+                            aria-pressed="false">♡
+                    </button>
+                    <img src="/images/product 8.png" alt="Black Polo Ralph Lauren T-shirt" loading="lazy"
+                         width="1600" height="1600"></div>
+                <div class="product-meta">
+                    <div><p class="product-type">Tops / 008</p>
+                        <h3>Polo Ralph Lauren T-shirt</h3>
+                        <p class="product-size">Size L · Good</p></div>
+                    <p class="price">€24</p></div>
+            </article>
+        </div>
+    </section>
+    <section class="catalog-note reveal"><p class="eyebrow">Seen something?</p>
+        <h2>Each piece only<br>comes around once.</h2><a class="button button-dark" href="./contacts.html">Ask about an
+            item</a></section>
+</main>
+<footer class="site-footer">
+    <div class="footer-brand">THRIFT<span>/SHOP</span><small>SOFIA</small></div>
+    <div class="footer-nav"><p class="eyebrow">Navigate</p><a href="./products.html">Products</a><a href="./about.html">Our
+        story</a><a href="./contacts.html">Contact</a></div>
+    <address><p class="eyebrow">Visit</p>37 Vitosha Blvd.<br>Sofia 1000, Bulgaria<br><a
+            href="mailto:thriftshop@mail.bg">thriftshop@mail.bg</a></address>
+    <div class="footer-bottom"><p>Independent second-hand store.</p>
+        <p>© <span data-year></span> Thrift Shop Sofia</p></div>
+</footer>
+</body>
+</html>
