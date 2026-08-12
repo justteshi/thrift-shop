@@ -1,66 +1,85 @@
----
-layout: main
-title: About
-permalink: /about/
----
-
-<style>
-    .aboutus-container{
-        padding-top: 5em;
-        text-align: center;
-        width: 70%;
-        margin: 0 auto;
-        font-size: 15px;
-    }
-    h1{
-        margin: 0 auto;
-        color: salmon;
-        text-shadow: 2px 2px black;
-        font-size: 30px;
-        border-bottom: 2px dotted salmon;
-        margin-bottom: 1em;
-        width: 30%;
-    }
-    .wrapper{
-        
-        margin: 1em;
-        display: flex;
-    }
-    .wrapper p{
-        font-size: 18px;
-        padding-right: 2em;
-        color: rgb(43, 122, 185);
-        text-shadow: 1px 1px black;;
-    }
-    #header-image{
-        width: 100%;
-        height: 350px;
-        border-radius: 5px;
-        border: 2px solid salmon;
-    }
-    #text-iamge{
-        border-radius: 5px;
-        border: 2px solid salmon;
-    }
-
-    @media (max-width:750px){
-        img{
-            display: none;
-        }
-        .wrapper p{
-            padding-right: 0;
-        }
-    }
-</style>
-
-<div class="aboutus-container">
-    <h1>About Us</h1>
-    <img src="{{ site.baseurl }}/images/colors.jpg" id="header-image">
-    <div class="wrapper">
-        <p> As our handbasket accelerates towards a hell of melting ice caps, smoking rainforests and smug, gammon-skinned climate-deniers, it’s tough to muster much optimism. When Trump’s using executive orders to roll back environmental protections, using a KeepCup feels about as impactful as trying to extinguish the Amazon with a water pistol.
-            But as consumers – and especially fashion consumers – we’re more powerful than we think. You know the numbers by now – fashion gobbles up more energy than shipping and air travel combined; 11m garments end up in UK landfill each week; we’ll be creating 102m tonnes of clothing by 2030 – but their sheer scale can be enervating. Against that tidal wave of new clothing, what can one man do? Well, you can start not buying it. For all the stuff ends up in landfill, there’s plenty more that was crafted to last. Buying second-hand clothes is the almost-carbon-neutral way to scratch your fashion itch without, y’know, contributing to a climate crisis that, according to the most doom-mongery scientists, could see as much as 90 per cent of humanity wiped out within a century.</p>
-        <img src="{{ site.baseurl }}/images/popup.jpg" id="text-iamge">
-    </div>
-</div>
-
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="The story and purpose behind Thrift Shop Sofia's considered collection of pre-loved fashion.">
+    <title>About — Thrift Shop</title>
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body data-page="about">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><a class="brand" href="./index.html" aria-label="Thrift Shop home">THRIFT<span>/SHOP</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="./index.html"
+                                                                           data-nav="home">Home</a><a
+            href="./products.html" data-nav="products">Products</a><a href="./about.html" data-nav="about">About</a><a
+            href="./contacts.html" data-nav="contacts">Contact</a></nav>
+    <a class="header-cta" href="./products.html">Shop the drop <span aria-hidden="true">↗</span></a></header>
+<main id="main-content">
+    <header class="page-hero about-hero"><p class="eyebrow reveal">Our story · Sofia, Bulgaria</p>
+        <h1 class="reveal">Clothes with<br><em>somewhere to go.</em></h1></header>
+    <section class="about-lead section">
+        <div class="about-lead-copy reveal"><p class="pull-quote">We believe the most interesting wardrobe is built
+            slowly—not delivered overnight.</p>
+            <p>Thrift Shop began with a simple idea: good clothes deserve more than one life. What once felt like a
+                secret in Bulgaria has become a confident, creative way to dress. We look beyond trends and labels for
+                pieces that feel personal, useful, and ready to be worn again.</p></div>
+        <figure class="about-lead-image reveal"><img src="/images/clothes.jpg"
+                                                     alt="A densely stocked vintage clothing shop full of colorful garments"
+                                                     width="1200" height="900">
+            <figcaption>A good rail rewards curiosity.</figcaption>
+        </figure>
+    </section>
+    <section class="story-band">
+        <figure class="reveal"><img src="/images/thrift.jpg"
+                                    alt="Clothing rails inside a busy second-hand shop" loading="lazy" width="1600"
+                                    height="1065"></figure>
+        <div class="story-band-copy reveal"><p class="eyebrow">Why second-hand?</p>
+            <h2>The antidote to<br>disposable fashion.</h2>
+            <p>Fashion uses an enormous amount of material and energy, while wearable garments are discarded every day.
+                Choosing pre-loved keeps existing clothes in circulation and makes room for a more individual kind of
+                style.</p>
+            <p>We cannot solve the whole system from one shop. We can make the better choice feel exciting, accessible,
+                and worth repeating.</p></div>
+    </section>
+    <section class="section process">
+        <div class="section-heading reveal"><p class="eyebrow">From old rail to new wardrobe</p>
+            <h2>Our edit,<br>in four steps.</h2></div>
+        <ol class="process-list">
+            <li class="reveal"><span>01</span>
+                <div><h3>Source</h3>
+                    <p>We search for distinctive, wearable pieces rather than buying anonymous bulk.</p></div>
+            </li>
+            <li class="reveal"><span>02</span>
+                <div><h3>Check</h3>
+                    <p>Condition, construction, labels, and details are inspected before selection.</p></div>
+            </li>
+            <li class="reveal"><span>03</span>
+                <div><h3>Refresh</h3>
+                    <p>Items are cleaned and prepared so they are ready for their next owner.</p></div>
+            </li>
+            <li class="reveal"><span>04</span>
+                <div><h3>Recirculate</h3>
+                    <p>The piece returns to the world—with less waste and a completely new context.</p></div>
+            </li>
+        </ol>
+    </section>
+    <section class="image-break reveal"><img src="/images/colors.jpg"
+                                             alt="Colorful T-shirts suspended inside a modern clothing shop"
+                                             loading="lazy" width="1000" height="557">
+        <p>Choose character.<br><em>Wear it your way.</em></p></section>
+</main>
+<footer class="site-footer">
+    <div class="footer-brand">THRIFT<span>/SHOP</span><small>SOFIA</small></div>
+    <div class="footer-nav"><p class="eyebrow">Navigate</p><a href="./products.html">Products</a><a href="./about.html">Our
+        story</a><a href="./contacts.html">Contact</a></div>
+    <address><p class="eyebrow">Visit</p>37 Vitosha Blvd.<br>Sofia 1000, Bulgaria<br><a
+            href="mailto:thriftshop@mail.bg">thriftshop@mail.bg</a></address>
+    <div class="footer-bottom"><p>Independent second-hand store.</p>
+        <p>© <span data-year></span> Thrift Shop Sofia</p></div>
+</footer>
+</body>
+</html>
